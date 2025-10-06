@@ -1,5 +1,54 @@
+// {
+//   "compilerOptions": {
+//     // Environment Settings
+//     "module": "NodeNext",
+//     "moduleResolution": "NodeNext",
+//     "target": "ESNext",
+//     "lib": ["ESNext", "DOM"],
+
+//     // Node.js types
+//     "types": ["node"],
+
+//     // Module interoperability (needed for axios default import)
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+
+//     // Outputs
+//     "sourceMap": true,
+//     "declaration": true,
+//     "declarationMap": true,
+
+//     // Stricter Typechecking Options
+//     "strict": true,
+//     "noUncheckedIndexedAccess": true,
+//     "exactOptionalPropertyTypes": true,
+
+//     // React JSX
+//     "jsx": "react-jsx",
+
+//     // Modules & isolated modules
+//     "isolatedModules": true,
+//     "verbatimModuleSyntax": true,
+//     "noUncheckedSideEffectImports": true,
+//     "moduleDetection": "force",
+//     "skipLibCheck": true
+//   }
+// }
+
+
+
 {
   "extends": "@react-native/typescript-config",
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/node_modules", "**/Pods"]
+  "include": ["/*.ts", "/*.tsx"],
+  "exclude": ["/node_modules", "/Pods"],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  }
 }
